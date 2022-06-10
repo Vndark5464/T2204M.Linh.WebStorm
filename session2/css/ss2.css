@@ -1,0 +1,36 @@
+.a{
+    font-family:"black";
+    column-count: auto;
+    color: none;
+    text-align: left;
+    width: 30%;
+    height: 80px;
+    float: left;
+}
+.v{
+    font-size: 20px;
+    float:right;
+    width: 40%;
+    height: 150px;
+    text-align: right;
+}
+k{
+    text-decoration:underline;
+    color: red;
+}
+d{
+    font-style: inherit;
+    color: red;
+}
+body{
+    background : url("");
+    background-size: contain;
+}
+l{
+    text-align: center;
+}
+body{
+    width: auto;
+}
+.m{
+    text-indent: 180px;}
