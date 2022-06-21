@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(229 229 229);
+}
+.container{
+    background-color: white;
+    box-sizing: border-box;
+    margin-left: 400px;
+    margin-top: 100px;
+    padding: 20px 20px 20px 40px;
+    width: 400px;
+    height: 400px;
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+    margin-top: 20px;
+}
+#a{
+    color: gray;
+    font-size: 12px;
+}
+
+input[type='text']{
+    background-color: rgb(231 231 231);
+    width: 300px;
+}
+select{
+    width: 145px;
+    background-color: rgb(231 231 231);
+}
+
