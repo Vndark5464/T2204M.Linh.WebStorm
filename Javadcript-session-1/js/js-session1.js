@@ -1,5 +1,5 @@
 
-var m = 3; // Phút
+var m = 10; // Phút
 var s = 59; // Giây
 var mid = ":" ;
 var x = "0"
