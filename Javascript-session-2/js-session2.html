@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ss2</title>
+    <link rel="stylesheet" href="css/js-session2.css">
+</head>
+<body>
+<section class="container">
+<header class="left">
+    <p id="temp">34<sup><sup>o</sup>C</sup></p>
+    <p id="hump">86%</p>
+    <div id="icon">aaa</div>
+    <p id="precip">0</p>
+    <div id="wind">aaa</div>
+</header>
+<footer class="right">
+    <div id="city">Hanoi</div>
+    <div id="date">Tuesday</div>
+    <div id="desc">Mostly sunny</div>
+
+</footer>
+<script type="text/javascript" src="lbs/jquery/jquery.js"></script>
+<script type="text/javascript">
+
+    $.ajax({
+        url:"http://api.weatherstack.com/current?access_key=552d975f6c694c848c61a3d52fc0e34c&query=hanoi",
+        method:"get",
+        success:function (data) {
+            $("#date").html(data.location.localtime);
+            $("#precip").html("Precipitation : " + data.current.precip);
+        }
+    })
+</script>
+<script type="text/javascript">
+    $.ajax({
+        url: "https://api.openweathermap.org/data/2.5/weather?q=Hanoi,vietnam&appid=09a71427c59d38d6a34f89b47d75975c&units=metric",
+        method: "get",
+        success:function (data2) {
+            var dt=$("#desc");
+            dt.html(data2.weather[0].description);
+            $("#icon").html("<img src='https://openweathermap.org/img/wn/"+
+                data2.weather[0].icon+".png' width='120px' height='120px'/>");
+            $("#hump").html("Humidity : " + data2.main.humidity);
+            $("#wind").html("Wind : " + data2.wind.speed + " Km/h");
+        }
+    })
+</script>
+ <script type="text/javascript">
+     $.ajax({
+         url:"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/C%E1%BA%A7u%20Gi%E1%BA%A5y%2CH%C3%A0%20N%E1%BB%99i?unitGroup=metric&key=42336DSCLAREVMUM7KVXSXT5U&contentType=json",
+         method:"get",
+         success:function (data3) {
+             $("#city").html(data3.address);
+             $
+         }
+     })
+</script>
+</section>
+</body>
+</html>
