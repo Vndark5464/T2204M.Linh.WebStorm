@@ -1,0 +1,35 @@
+.container{
+    box-sizing: border-box;
+    background-color: #7a7980;
+    display: flex;
+    flex-wrap: wrap;
+}
+.js1 ,.js2 ,.js3 ,.js4,.js5,.js6,.js7,.js8,.js9,.js10,.js11,.js12,.js13{
+    margin: 20px;
+    border: 1px solid #6a1a21;
+    text-indent: 10px;
+    background-color: #95ffaf;
+    width: 200px;
+    height: 150px;
+}
+#icon ,#icon2 ,#icon3, #icon4,#icon5,#icon6,#icon7,#icon8,#icon9,#icon10,#icon11,#icon12,#icon13{
+    float: right;
+    margin-top: -100px;
+    margin-right: 10px;
+}
+#temp,#temp2,#temp3,#temp4,#temp5,#temp6,#temp7,#temp8,#temp9,#temp10,#temp11,#temp12,#temp13{
+    font-size: 30px;
+    margin-top: -17px;
+}
+#desc,#desc2,#desc3,#desc4,#desc5,#desc6,#desc7,#desc8,#desc9,#desc10,#desc11,#desc12,#desc13{
+    margin-top: -20px;
+}
+h1{
+    background-color: #2196F3;
+    box-sizing: border-box;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    border: 3px solid red;
+    text-align: center;
+}
